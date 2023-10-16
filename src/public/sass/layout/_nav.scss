@@ -1,0 +1,7 @@
+@use "../abstracts/variables";
+nav {
+    display: flex;
+    height: 20vh;
+    background-color: variables.$secondary;
+    margin: 0;
+}

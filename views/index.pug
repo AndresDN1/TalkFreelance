@@ -1,0 +1,35 @@
+doctype html
+html(lang="es")
+    head
+        title ChatWorker
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="sass/main.css")
+        link(rel="icon" type="image/x-icon" href="images/favicon.ico")
+    body
+        nav
+            img(src="images/logo.png" alt="logo" class="logo")
+            img(src="images/talkFreelance.png" alt="TalkFreelance" class="title")
+        .main
+            .talkFreelance
+                p(class="slogan") El sitio ideal para trabajo freelancer
+                img(src="images/logo.png" alt="TalkFreelance")
+                p(class="text").
+                    Ya seas una persona en busca de un profesional para una labor,
+                    un profesional buscando promocionarse en línea, o simplemente un
+                    trabajador que quiere pasar un buen rato, WorkChatter es tu lugar.
+                    Aquí podrás encontrar trabajadores de múltiples áreas, unirte a ellos,
+                    contratarlos, hablar con clientes sin estrés bajo horarios totalmente
+                    configurables, contratar a los mejores profesionales de un área según
+                    reseñas de otros usuarios, o simplemente tener una conversación con
+                    estos expertos.
+            .forms
+                .options
+                    input(type="button" value="Crear cuenta" class="formButton register")
+                    input(type="button" value="Iniciar sesión" class="selected formButton login")
+                    input(type="button" value="Recuperar cuenta" class="formButton recover")
+                form(class="form login" name="login" method="POST")
+                    input(type="text" placeholder="Ingrese correo electrónico" class="loginInput" name="email")
+                    input(type="password" placeholder="Ingrese contraseña" class="loginInput" name="login")
+                    input(type="submit" value="Iniciar sesión" class="input loginInput")
+        script(src="js/changeForms.js")
+
